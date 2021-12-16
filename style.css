@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.pointer {
+   cursor: pointer;
+}
+
+.smooth-trans {
+   transition: all 0.2s ease-in-out;
+}
+
+body {
+   background-color: hsl(217, 54%, 11%);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   font-family: "Outfit", sans-serif;
+}
+
+.card {
+   width: 90%;
+   max-width: 400px;
+   background-color: hsl(216, 50%, 16%);
+   padding: 1.75rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.356);
+}
+
+.card img {
+   max-width: 100%;
+   display: block;
+}
+
+.nft-image {
+   border-radius: 0.5rem;
+   overflow: hidden;
+   position: relative;
+}
+
+.nft-image::after {
+   content: url("./images/icon-view.svg");
+   position: absolute;
+   inset: 0;
+   background-color: hsla(178, 100%, 50%, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: inherit;
+   will-change: opacity;
+}
+
+.nft-image:hover::after {
+   opacity: 1;
+}
+
+.title {
+   color: white;
+   will-change: color;
+}
+
+.title:hover {
+   color: rgb(0, 255, 247);
+}
+
+.desc {
+   color: hsl(215, 51%, 70%);
+   font-size: 1.3rem;
+   font-weight: 300;
+}
+
+.price-and-time {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.price-and-time h3 {
+   color: hsl(178, 100%, 50%);
+}
+
+h4 {
+   color: hsl(215, 51%, 70%);
+   font-weight: 400;
+}
+
+.price,
+.time {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+hr {
+   height: 2px;
+   background-color: hsl(215, 32%, 27%);
+   border: none;
+}
+
+.creator {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.creator img {
+   width: 2.5rem;
+   aspect-ratio: 1;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 2px solid white;
+}
+
+.creator span {
+   color: white;
+   will-change: color;
+}
+
+.creator span:hover {
+   color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+   color: hsl(215, 51%, 70%);
+   font-size: 0.9rem;
+   letter-spacing: 0.06em;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 455px) {
+   :root {
+      font-size: 14px;
+   }
+}
