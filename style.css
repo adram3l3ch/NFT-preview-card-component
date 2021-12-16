@@ -29,12 +29,12 @@ body {
 
 .card {
    width: 90%;
-   max-width: 400px;
+   max-width: 350px;
    background-color: hsl(216, 50%, 16%);
-   padding: 1.75rem;
+   padding: 1.5rem;
    display: flex;
    flex-direction: column;
-   gap: 1.5rem;
+   gap: 1rem;
    border-radius: 1rem;
    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.356);
 }
@@ -69,6 +69,7 @@ body {
 
 .title {
    color: white;
+   font-size: 1.3rem;
    will-change: color;
 }
 
@@ -78,8 +79,9 @@ body {
 
 .desc {
    color: hsl(215, 51%, 70%);
-   font-size: 1.3rem;
+   font-size: 1.1rem;
    font-weight: 300;
+   line-height: 1.5em;
 }
 
 .price-and-time {
@@ -90,6 +92,7 @@ body {
 
 .price-and-time h3 {
    color: hsl(178, 100%, 50%);
+   font-size: 1rem;
 }
 
 h4 {
@@ -117,7 +120,7 @@ hr {
 }
 
 .creator img {
-   width: 2.5rem;
+   width: 2.3rem;
    aspect-ratio: 1;
    object-fit: cover;
    border-radius: 50%;
@@ -135,7 +138,7 @@ hr {
 
 .attribution {
    color: hsl(215, 51%, 70%);
-   font-size: 0.9rem;
+   font-size: 0.85rem;
    letter-spacing: 0.06em;
 }
 
